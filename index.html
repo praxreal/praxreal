@@ -5,250 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="icon" type="image/png" href="https://scontent.fbkk5-4.fna.fbcdn.net/v/t39.30808-6/471599882_916037023841002_3277268862888231013_n.jpg">
+<link rel="stylesheet" href="style.css">
 
 <title>รณรงค์รักษ์สะอาดในโรงเรียน</title>
-
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap');
-
-:root{
-  --primary:#4a148c;
-  --secondary:#7b1fa2;
-  --purple:#b576f9;
-  --purple:#b576f9;
-  --purple:#b576f9;
-}
-
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-body{
-  font-family:'Kanit',sans-serif;
-  background:#b576f9;
-  color:#333;
-  line-height:1.7;
-}
-
-/* ===== Navbar ===== */
-nav{
-  background:var(--white);
-  box-shadow:0 4px 15px rgba(0,0,0,.08);
-  padding:10px 40px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  position:fixed;
-  width:100%;
-  top:0;
-  z-index:1000;
-}
-
-.nav-left{
-  display:flex;
-  align-items:center;
-  gap:15px;
-}
-
-.nav-left img{
-  height:50px;
-  border-radius:50%;
-}
-
-.nav-left span{
-  font-weight:600;
-  font-size:1.1rem;
-  color:var(--primary);
-}
-
-.nav-links{
-  display:flex;
-}
-
-.nav-links a{
-  text-decoration:none;
-  margin-left:25px;
-  font-weight:500;
-  color:#333;
-  transition:.3s;
-}
-
-.nav-links a:hover{
-  color:var(--secondary);
-}
-
-/* Hamburger */
-.hamburger{
-  display:none;
-  flex-direction:column;
-  cursor:pointer;
-}
-
-.hamburger div{
-  width:25px;
-  height:3px;
-  background:var(--primary);
-  margin:4px 0;
-  transition:.4s;
-}
-
-/* ===== Header ===== */
-header{
-  margin-top:80px;
-  background:linear-gradient(rgba(74,20,140,.85),rgba(123,31,162,.85)),
-  url("https://images.unsplash.com/photo-1604187351574-c75ca79f5807?auto=format&fit=crop&w=1400&q=60");
-  background-size:cover;
-  background-position:center;
-  color:#fff;
-  text-align:center;
-  padding:130px 20px;
-}
-
-header h1{
-  font-size:3rem;
-  margin-bottom:15px;
-}
-
-header p{
-  font-size:1.2rem;
-  opacity:.95;
-}
-
-/* ===== Section ===== */
-.section{
-  padding:80px 20px;
-  max-width:1100px;
-  margin:auto;
-  text-align:center;
-}
-
-.section:nth-child(even){
-  background:var(--gray);
-}
-
-h2{
-  font-size:2.2rem;
-  margin-bottom:25px;
-  color:var(--primary);
-}
-
-h3{
-  margin-top:30px;
-  color:var(--secondary);
-}
-
-/* Content Box */
-.content-box{
-  background:#fff;
-  border-left:6px solid var(--secondary);
-  padding:25px;
-  border-radius:12px;
-  margin-top:15px;
-  text-align:left;
-  box-shadow:0 8px 20px rgba(0,0,0,.05);
-  transition:.3s;
-}
-
-.content-box:hover{
-  transform:translateY(-5px);
-}
-
-/* Cards */
-.card-container{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:30px;
-  margin-top:40px;
-}
-
-.card{
-  background:#fff;
-  width:260px;
-  border-radius:18px;
-  box-shadow:0 8px 20px rgba(0,0,0,.08);
-  overflow:hidden;
-  transition:.4s;
-}
-
-.card:hover{
-  transform:translateY(-10px);
-}
-
-.card img{
-  width:100%;
-  height:180px;
-  object-fit:cover;
-}
-
-.card-content{
-  padding:20px;
-  text-align:left;
-}
-
-.card h3{
-  margin-bottom:10px;
-}
-
-/* Footer */
-footer{
-  background:var(--primary);
-  color:#fff;
-  text-align:center;
-  padding:25px;
-  margin-top:40px;
-}
-
-/* Scroll Animation */
-.hidden{
-  opacity:0;
-  transform:translateY(40px);
-  transition:all .8s ease;
-}
-.show{
-  opacity:1;
-  transform:translateY(0);
-}
-
-/* ===== Responsive ===== */
-@media(max-width:768px){
-
-  .nav-links{
-    position:absolute;
-    right:0;
-    top:70px;
-    background:#fff;
-    flex-direction:column;
-    width:220px;
-    text-align:center;
-    box-shadow:0 8px 20px rgba(0,0,0,.1);
-    transform:translateX(100%);
-    transition:.4s;
-  }
-
-  .nav-links a{
-    margin:20px 0;
-  }
-
-  .nav-links.active{
-    transform:translateX(0);
-  }
-
-  .hamburger{
-    display:flex;
-  }
-
-}
-</style>
 </head>
 
 <body>
 
 <nav>
   <div class="nav-left">
-    <img src=https://scontent.fbkk5-4.fna.fbcdn.net/v/t39.30808-6/471599882_916037023841002_3277268862888231013_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeH96blxtTwWTBmcyGn1L0xGAvMRc2-NrGgC8xFzb42saD9cRlRsmIgSq8QoJakdcMesoQ-_4IqHxXWsuwzAgcXZ&_nc_ohc=hrWirGVtIagQ7kNvwGeI9kX&_nc_oc=AdnkE2s-SrxzmU1BAplizJlVi5JzlVGyT-9ETMmbOxHi2KASlk3ka0RfgOomLPJZy1BymXkrNhTH0PLBD22KlP0v&_nc_zt=23&_nc_ht=scontent.fbkk5-4.fna&_nc_gid=cqWAdsWY1wCqG3uzKD5gqQ&oh=00_AfttsRnNUnGDiIBsOoqAGmJUUDOct5rza0bU7teG7NrZGg&oe=69A4C85B">
+    <img src="https://scontent.fbkk5-4.fna.fbcdn.net/v/t39.30808-6/471599882_916037023841002_3277268862888231013_n.jpg">
     <span>รณรงค์รักษ์สะอาดในโรงเรียน</span>
   </div>
 
@@ -274,17 +40,18 @@ footer{
 <section class="section hidden" id="about">
   <h2>สาระสำคัญของโครงงาน</h2>
   <div class="content-box">
-โครงงานนี้มุ่งเน้นการผลิตและเผยแพร่สื่อดิจิทัลเพื่อส่งเสริมการคัดแยกขยะอย่างถูกวิธี และสร้างจิตสำนึกด้านสิ่งแวดล้อมให้กับนักเรียนและบุคลากรภายในโรงเรียน โดยใช้เทคโนโลยีดิจิทัลเป็นเครื่องมือหลักในการสื่อสารและสร้างการมีส่วนร่วม  </div>
+    โครงงานนี้มุ่งเน้นการผลิตและเผยแพร่สื่อดิจิทัลเพื่อส่งเสริมการคัดแยกขยะอย่างถูกวิธี 
+    และสร้างจิตสำนึกด้านสิ่งแวดล้อมให้กับนักเรียนและบุคลากรภายในโรงเรียน 
+    โดยใช้เทคโนโลยีดิจิทัลเป็นเครื่องมือหลักในการสื่อสารและสร้างการมีส่วนร่วม
+  </div>
 </section>
 
 <section class="section hidden" id="scope">
   <h2>ขอบเขตของโครงงาน</h2>
   <div class="content-box">
-ขอบเขตด้านประชากรและพื้นที่
-• พื้นที่ดำเนินงาน: จุดทิ้งขยะสำคัญภายในโรงเรียน เช่น โรงอาหาร และใต้อาคารเรียน
-• กลุ่มเป้าหมาย: นักเรียน บุคลากร และผู้ที่เข้ามาใช้งานพื้นที่ภายในโรงเรียน
-ขอบเขตด้านระยะเวลา
-ดำเนินโครงงานเป็นระยะเวลา 3 สัปดาห์ ตั้งแต่ขั้นตอนการวางแผน ออกแบบ พัฒนา ทดลองใช้งาน และสรุปผลการดำเนินงาน
+    • พื้นที่ดำเนินงาน: จุดทิ้งขยะสำคัญภายในโรงเรียน เช่น โรงอาหาร และใต้อาคารเรียน <br><br>
+    • กลุ่มเป้าหมาย: นักเรียน บุคลากร และผู้ที่เข้ามาใช้งานพื้นที่ภายในโรงเรียน <br><br>
+    • ระยะเวลาดำเนินงาน: 3 สัปดาห์ ตั้งแต่วางแผน ออกแบบ พัฒนา ทดลองใช้งาน และสรุปผล
   </div>
 </section>
 
@@ -307,13 +74,15 @@ footer{
         <p>กระดาษ พลาสติก แก้ว โลหะ</p>
       </div>
     </div>
+
     <div class="card">
       <img src="https://hospitalitythailand.com/uploads/202206/6296c5a4d9e98.png">
       <div class="card-content">
         <h3>ขยะอันตราย</h3>
-        <p>ของเสียที่มีสารเคมีหรือวัตถุอันตราย เช่น ถ่านไฟฉาย หลอดไฟ กระป๋องสเปรย์</p>
+        <p>ถ่านไฟฉาย หลอดไฟ กระป๋องสเปรย์</p>
       </div>
     </div>
+
     <div class="card">
       <img src="https://s3gw.inet.co.th:8082/smegp-image-4/smegp_images/47/SMEGP-2022-01-29-13-37-34-PRODUCT-001.jpg">
       <div class="card-content">
@@ -328,20 +97,6 @@ footer{
   © 2026 โรงเรียนของเรา | โครงงานรณรงค์รักษ์สะอาด
 </footer>
 
-<script>
-function toggleMenu(){
-  document.getElementById("navLinks").classList.toggle("active");
-}
-
-const observer = new IntersectionObserver(entries=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      entry.target.classList.add('show');
-    }
-  });
-});
-document.querySelectorAll('.hidden').forEach(el=>observer.observe(el));
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
